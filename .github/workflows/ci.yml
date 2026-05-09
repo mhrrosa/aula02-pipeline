@@ -20,6 +20,12 @@ jobs:
 
       - name: Instalar dependências
         run: npm install
+      
+      - name: Verificar qualidade de código
+        run: npm eslint .
 
       - name: Rodar testes
         run: npm test
+      
+      - name: Cobertura de testes
+        run: npm test -- --coverage
