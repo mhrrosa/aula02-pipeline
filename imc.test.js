@@ -7,3 +7,7 @@ test('deve calcular o IMC corretamente', () => {
 test('não deve retornar um valor incorreto de IMC', () => {
     expect(calcularIMC(80, 1.80)).not.toBeCloseTo(30, 2);
 });
+
+test('o resultado deve ser maior que 20', () => {
+    expect(calcularIMC(80, 1.80)).toBeGreaterThan(20);
+});
