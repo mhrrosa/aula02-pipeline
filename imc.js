@@ -1,4 +1,5 @@
 
+let a = 5;
 function calcularIMC(peso, altura) {
     return peso / (altura * altura);
 }
